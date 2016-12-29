@@ -1,0 +1,3 @@
+[submodule "apps/samsung-skill"]
+	path = apps/samsung-skill
+	url = https://github.com/ownzandy/smart-home-alexa-samsung-tv-skill
