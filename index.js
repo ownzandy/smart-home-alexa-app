@@ -3,8 +3,11 @@ var AlexaAppServer = require('alexa-app-server');
 require('dotenv').config();
 
 var server = new AlexaAppServer({
-	httpsEnabled: false,
-	port: process.env.PORT || 8000
+	httpsEnabled: true,
+	port: 3001,
+	httpsPort: 3000,
+	privateKey: 'server.key',
+    certificate: 'server.crt'
 });
 
-server.start();
+server.start()
