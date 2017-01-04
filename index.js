@@ -10,4 +10,8 @@ var server = new AlexaAppServer({
     certificate: 'server.crt'
 });
 
+
 server.start()
+
+var basicAuth = require('basic-auth-connect')
+server.express.use(basicAuth(process.env.USER, process.env.PASSWORD))
