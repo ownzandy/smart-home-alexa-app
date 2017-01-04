@@ -4,14 +4,14 @@ require('dotenv').config();
 
 var server = new AlexaAppServer({
 	httpsEnabled: true,
+        debug: false,
 	port: 3001,
 	httpsPort: 3000,
 	privateKey: 'server.key',
-    certificate: 'server.crt'
+        certificate: 'server.crt',
+        chain: 'server.ca-bundle'
 });
-
 
 server.start()
 
-var basicAuth = require('basic-auth-connect')
-server.express.use(basicAuth(process.env.USER, process.env.PASSWORD))
+

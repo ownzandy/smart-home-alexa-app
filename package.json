@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "alexa-app-server": "^2.3.1",
+    "alexa-app-server": "github:ownzandy/alexa-app-server",
     "basic-auth-connect": "^1.0.0",
     "dotenv": "^2.0.0"
   }
