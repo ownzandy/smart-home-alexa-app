@@ -1,5 +1,4 @@
 'use strict';
-
 var AlexaAppServer = require('alexa-app-server');
 require('dotenv').config();
 
