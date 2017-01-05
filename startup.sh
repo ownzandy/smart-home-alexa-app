@@ -1,6 +1,7 @@
 #!/bin/bash
 fuser -n tcp -k 8081
 fuser -n tcp -k 4567
+fuser -n tcp -k 3001
 fuser -n tcp -k 3000
 sleep 5
 USER=$1 PASSWORD=$2 ruby /home/pi/Development/smart-home-sensi-thermostat/server.rb &
